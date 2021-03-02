@@ -5,12 +5,13 @@ class Divisions {
         }
         this.body = Bodies.rectangle(x,y,w,h,options);
         this.w = w;
-        this.h = hWorld.add(world, this.body);
+        this.h = h;
+        World.add(world, this.body);
     }
     display(){
         var pos = this.body.position;
-        rectMode(CENTRE);
-        filll("white");
+        rectMode(CENTER);
+        fill("white");
         rect(pos.x, pos.y, this.w, this.h);
     }
 };
